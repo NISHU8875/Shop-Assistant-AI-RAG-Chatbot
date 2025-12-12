@@ -20,31 +20,31 @@ Built with Llama 3.3 via Groq, Streamlit, ChromaDB, SQLite, and Hugging Face emb
 ## Folder structure
 
 GenAI_Project2_resources/
-├─ app/                          # Main application source code
-│  ├─ resources/                 # Static assets and data files
-│  │  ├─ architecture-diagram.png # System architecture visualization
-│  │  ├─ ecommerce_data_final.csv # Cleaned product dataset
-│  │  ├─ faq_data.csv            # FAQ knowledge base for RAG
-│  │  └─ product-ss.png          # Product screenshots/images
-│  ├─ chitchat.py                # Logic for casual conversation handling
-│  ├─ db.sqlite                  # SQLite database for products
-│  ├─ faq.py                     # FAQ retrieval & RAG chain logic
-│  ├─ main.py                    # Main Streamlit UI entry point
-│  ├─ router.py                  # Semantic routing logic (FAQ vs SQL vs Chitchat)
-│  └─ sql.py                     # Text-to-SQL generation logic
+├─ app/                          
+│  ├─ resources/                 
+│  │  ├─ architecture-diagram.png 
+│  │  ├─ ecommerce_data_final.csv 
+│  │  ├─ faq_data.csv            
+│  │  └─ product-ss.png         
+│  ├─ chitchat.py                
+│  ├─ db.sqlite                 
+│  ├─ faq.py                     
+│  ├─ main.py                    
+│  ├─ router.py                  
+│  └─ sql.py                     
 │
-├─ web-scrapping/                # Data collection & processing scripts
-│  ├─ csv_to_sqlite.py           # Script to convert CSV data to SQLite
-│  ├─ duplicate_products.csv     # Intermediate data cleaning file
-│  ├─ flipkart_data_extraction.ipynb # Jupyter notebook for scraping
-│  ├─ flipkart_product_data.csv  # Raw scraped product data
-│  ├─ flipkart_product_links.csv # Scraped product URLs
-│  └─ unavailable_products.csv   # Log of missing/unavailable items
+├─ web-scrapping/                
+│  ├─ csv_to_sqlite.py           
+│  ├─ duplicate_products.csv     
+│  ├─ flipkart_data_extraction.ipynb 
+│  ├─ flipkart_product_data.csv  
+│  ├─ flipkart_product_links.csv 
+│  └─ unavailable_products.csv  
 │
-├─ .env                          # Environment variables (API keys)
-├─ .gitignore                    # Git ignore rules
-├─ README.md                     # Project documentation
-└─ requirements.txt              # Python dependencies list
+├─ .env                          
+├─ .gitignore                    
+├─ README.md                     
+└─ requirements.txt              
 
 
 ---
