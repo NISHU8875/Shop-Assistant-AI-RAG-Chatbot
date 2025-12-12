@@ -1,5 +1,6 @@
 from semantic_router import Route
-from semantic_router.routers import SemanticRouter
+# from semantic_router.routers import SemanticRouter
+from semantic_router.layer import RouteLayer  # Changed from semantic_router.routers
 from semantic_router.encoders import HuggingFaceEncoder
 
 encoder = HuggingFaceEncoder(
@@ -75,7 +76,7 @@ chitchat = Route(
 )
 
 # Create router without routes first
-router = SemanticRouter(encoder=encoder)
+router = RouteLayer(encoder=encoder)
 
 # Add routes one by one (this builds the index automatically)
 router.add(faq)
@@ -89,58 +90,3 @@ if __name__ == "__main__":
     print(router("Hi, I'm John").name)
     print(router("What should I wear today?").name)
 
-
-
-
-
-
-
-
-
-
-# # from semantic_router import Route, RouteLayer
-
-# from semantic_router import Route
-# from semantic_router.routers import SemanticRouter
-
-# from semantic_router.encoders import HuggingFaceEncoder
-
-# encoder = HuggingFaceEncoder(
-#     name="sentence-transformers/all-MiniLM-L6-v2"
-# )
-
-# faq = Route(
-#     name='faq',
-#     utterances=[
-#         "What is the return policy of the products?",
-#         "Do I get discount with the HDFC credit card?",
-#         "How can I track my order?",
-#         "What payment methods are accepted?",
-#         "How long does it take to process a refund?",
-#     ]
-# )
-
-# sql = Route(
-#     name='sql',
-#     utterances=[
-#         "I want to buy nike shoes that have 50% discount.",
-#         "Are there any shoes under Rs. 3000?",
-#         "Do you have formal shoes in size 9?",
-#         "Are there any Puma shoes on sale?",
-#         "What is the price of puma running shoes?",
-#     ]
-# )
-
-# # router = RouteLayer(routes=[faq, sql], encoder=encoder)
-
-# ####### Create router without routes first
-# router = SemanticRouter(encoder=encoder)
-
-# # Add routes one by one (this builds the index automatically)
-# router.add(faq)
-# router.add(sql) #######
-
-
-# if __name__ == "__main__":
-#     print(router("What is your policy on defective product?").name)
-#     print(router("Pink Puma shoes in price range 1000 to 5000").name)

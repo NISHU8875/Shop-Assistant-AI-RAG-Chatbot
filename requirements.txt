@@ -14,3 +14,7 @@ langchain-huggingface
 python-dotenv
 pandas
 sentence-transformers
+
+streamlit
+semantic-router
+sqlite3
