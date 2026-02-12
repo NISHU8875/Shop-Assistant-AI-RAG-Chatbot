@@ -25,7 +25,7 @@ You can access the deployed app here:
 
 ## Folder structure
 
-GenAI_Project2_resources/
+E-COMMERCE-CHATBOT-NISHU/
 ├─ app/                          
 │  ├─ resources/                 
 │  │  ├─ architecture-diagram.png 
