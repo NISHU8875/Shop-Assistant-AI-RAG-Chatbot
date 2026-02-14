@@ -87,8 +87,7 @@ E-COMMERCE-CHATBOT-NISHU/
                     │    (main.py)              │
                     │                           │
                     │  • Animated Gradient BG   │
-                    │  • Chat Interface         │
-                    │  • Message History        │
+                    │  • Chat Interface         │       │
                     │  • Text Input Handler     │
                     └─────────────┬─────────────┘
                                   │
